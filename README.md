@@ -1,10 +1,14 @@
-# OpenSpeed
+# OpenWebSpeed
 
-OpenSpeed is a tool designed to check if a target is vulnerable to WebSpeed misconfigurations. WebSpeed is a legacy application used for building and deploying web applications. This tool can also send OS commands to exploit vulnerabilities if they are present in the WebSpeed setup.
+OpenSpeed is a tool designed to check if a target is vulnerable to WebSpeed misconfigurations. WebSpeed is a legacy application used for building and deploying web applications using Progress4GL program language. This tool can also send OS commands to exploit vulnerabilities if they are present in the WebSpeed setup.
 
-## WebSpeed
+## Vulnerability
 
-WebSpeed is a legacy application, and this tool helps assess the security of such systems. Please ensure you are conducting tests responsibly and with proper authorization.
+When a WebSpeed server is in development mode, it enables a "workshop" function that can potentially be exploited by attackers to gain high privileges and take control of the server.
+
+## Fix
+
+To mitigate this risk, ensure that your WebSpeed server is operating in production mode. Avoid using development mode in a live environment. Additionally, consider updating your application to leverage newer technologies that offer enhanced security features.
 
 ## Features
 
@@ -95,3 +99,7 @@ The script includes some creative ASCII art banners for a fun user experience =)
 ## Disclaimer
 
 Hacking without permission is illegal. This tool is for educational purposes only. It should only be used on systems you own or have explicit permission to test. Unauthorized access to computer systems is a criminal offense and could lead to severe legal consequences. The author is not responsible for any misuse or damage caused by this tool.
+
+## WebSpeed
+
+WebSpeed is a legacy application, and this tool helps assess the security of such systems. Please ensure you are conducting tests responsibly and with proper authorization.
